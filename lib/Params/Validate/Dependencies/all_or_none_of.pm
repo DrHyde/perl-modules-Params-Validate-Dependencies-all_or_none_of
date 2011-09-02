@@ -55,7 +55,7 @@ sub all_or_none_of {
     my $count = 0;
     foreach my $option (@options) {
       $count++ if(
-        !ref($option && exists($hashref->{$option})) ||
+        (!ref($option) && exists($hashref->{$option})) ||
         (ref($option) && $option->($hashref))
       );
     }
