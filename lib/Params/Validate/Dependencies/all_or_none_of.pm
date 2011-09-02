@@ -65,3 +65,47 @@ sub all_or_none_of {
 
 sub join_with { return 'or'; }
 sub name      { return 'all_or_none_of'; }
+
+=head1 LIES
+
+Some of the above is incorrect.  If you really want to know what's
+going on, look at L<Params::Validate::Dependencies::Extending>.
+
+=head1 BUGS, LIMITATIONS, and FEEDBACK
+
+I like to know who's using my code.  All comments, including constructive
+criticism, are welcome.
+
+Please report any bugs either by email or using L<http://rt.cpan.org/>
+or at L<https://github.com/DrHyde/perl-modules-Params-Validate-Dependencies/issues>.
+
+Bug reports should contain enough detail that I can replicate the
+problem and write a test.  The best bug reports have those details
+in the form of a .t file.  If you also include a patch I will love
+you for ever.
+
+=head1 SEE ALSO
+
+L<Params::Validate::Dependencies>
+
+L<Data::Domain::Dependencies>
+
+=head1 SOURCE CODE REPOSITORY
+
+L<git://github.com/DrHyde/perl-modules-Params-Validate-Dependencies-all_or_none_of.git>
+
+L<https://github.com/DrHyde/perl-modules-Params-Validate-Dependencies-all_or_none_of/>
+
+=head1 COPYRIGHT and LICENCE
+
+Copyright 2011 David Cantrell E<lt>F<david@cantrell.org.uk>E<gt>
+
+This software is free-as-in-speech software, and may be used, distributed, and modified under the terms of either the GNU General Public Licence version 2 or the Artistic Licence. It's up to you which one you use. The full text of the licences can be found in the files GPL2.txt and ARTISTIC.txt, respectively.
+
+=head1 CONSPIRACY
+
+This module is also free-as-in-mason.
+
+=cut
+
+1;

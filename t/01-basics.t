@@ -27,10 +27,7 @@ ok(foo(alpha => 1, gamma => 1), "validation succeeds (alpha, gamma), code-ref");
 ok(foo(), "validation succeeds ([nothing]), code-ref");
 
 is(
-  do {
-    # work around a bug in early P::V::D
-    (my $foo = Params::Validate::Dependencies::document(@pvd)) =~ s/_/ /g; $foo
-  },
+  Params::Validate::Dependencies::document(@pvd),
   "all or none of ('alpha' or any of ('beta' or 'gamma'))",
   "doco works"
 );

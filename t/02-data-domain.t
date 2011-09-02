@@ -21,10 +21,7 @@ ok(!$domain->inspect({}), "none, validation succeeded");
 ok(!$domain->inspect({map { $_ => 1 } qw(alpha beta gamma)}), "all three, validation succeeded");
 
 is(
-  do {
-    # work around a bug in early P::V::D
-    (my $foo = $domain->generate_documentation()) =~ s/_/ /g; $foo
-  },
+  $domain->generate_documentation(),
   "all or none of ('alpha', 'beta' or 'gamma')",
   "doco works"
 );
