@@ -4,7 +4,7 @@ use warnings;
 use Params::Validate::Dependencies qw(:all);
 use Params::Validate::Dependencies::all_or_none_of;
 
-use Test::More tests => 14;
+use Test::More tests => 15;
 
 my @pvd = all_or_none_of(qw(alpha beta gamma));
 
@@ -25,6 +25,15 @@ dies_ok(foo(gamma => 1), "validation fails (gamma only), code-ref");
 ok(foo(alpha => 1, beta  => 1), "validation succeeds (alpha, beta), code-ref");
 ok(foo(alpha => 1, gamma => 1), "validation succeeds (alpha, gamma), code-ref");
 ok(foo(), "validation succeeds ([nothing]), code-ref");
+
+is(
+  do {
+    # work around a bug in early P::V::D
+    (my $foo = Params::Validate::Dependencies::document(@pvd)) =~ s/_/ /g; $foo
+  },
+  "all or none of ('alpha' or any of ('beta' or 'gamma'))",
+  "doco works"
+);
 
 sub dies_ok {
   my($sub, $look_for, $text) = @_;
