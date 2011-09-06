@@ -22,7 +22,7 @@ ok(!$domain->inspect({map { $_ => 1 } qw(alpha beta gamma)}), "all three, valida
 
 is(
   $domain->generate_documentation(),
-  "all or none of ('alpha', 'beta' or 'gamma')",
+  "all or none of ('alpha', 'beta' and 'gamma')",
   "doco works"
 );
 

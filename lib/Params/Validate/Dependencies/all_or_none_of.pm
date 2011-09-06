@@ -7,7 +7,7 @@ use base qw(Exporter Params::Validate::Dependencies::Documenter);
 
 use vars qw($VERSION @EXPORT @EXPORT_OK);
 
-$VERSION = '1.0';
+$VERSION = '1.01';
 @EXPORT_OK = @EXPORT = ('all_or_none_of');
 
 =head1 NAME
@@ -63,7 +63,7 @@ sub all_or_none_of {
   }, __PACKAGE__;
 }
 
-sub join_with { return 'or'; }
+sub join_with { return 'and'; }
 sub name      { return 'all_or_none_of'; }
 
 =head1 LIES

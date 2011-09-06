@@ -28,7 +28,7 @@ ok(foo(), "validation succeeds ([nothing]), code-ref");
 
 is(
   Params::Validate::Dependencies::document(@pvd),
-  "all or none of ('alpha' or any of ('beta' or 'gamma'))",
+  "all or none of ('alpha' and any of ('beta' or 'gamma'))",
   "doco works"
 );
 
