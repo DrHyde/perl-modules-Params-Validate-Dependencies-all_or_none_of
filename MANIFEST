@@ -8,3 +8,4 @@ t/02-data-domain.t
 t/pod-coverage.t
 t/pod.t
 MANIFEST
+MANIFEST.SKIP
