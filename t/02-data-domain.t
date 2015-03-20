@@ -1,10 +1,13 @@
 use strict;
 use warnings;
 
+use Test::More (
+    $] <= 5.010 ? (skip_all => 'only on perl 5.10 and higher') : ()
+);
+END { done_testing(); }
+
 use Data::Domain::Dependencies qw(Dependencies);
 use Params::Validate::Dependencies::all_or_none_of;
-
-use Test::More tests => 9;
 
 my $domain = Dependencies(
   all_or_none_of(qw(alpha beta gamma))
