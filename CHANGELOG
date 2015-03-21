@@ -1,4 +1,5 @@
-XXXX-XX-XX      XXXX    Minor change to wording in auto-documentation (or => and);
-                        Only test Data::Domain stuff with perl >= 5.10
+2015-03-21    1.01    Minor change to wording in auto-documentation
+                        (or => and);
+                      Only test Data::Domain stuff with perl >= 5.10
 
-2011-09-02      1.00    Initial release
+2011-09-02    1.00    Initial release
