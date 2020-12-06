@@ -4,7 +4,6 @@ use warnings;
 use Test::More (
     $] <= 5.010 ? (skip_all => 'only on perl 5.10 and higher') : ()
 );
-END { done_testing(); }
 
 use Data::Domain::Dependencies qw(Dependencies);
 use Params::Validate::Dependencies::all_or_none_of;
@@ -29,3 +28,4 @@ is(
   "doco works"
 );
 
+done_testing();
