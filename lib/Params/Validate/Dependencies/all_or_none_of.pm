@@ -12,12 +12,7 @@ $VERSION = '1.02';
 
 =head1 NAME
 
-Params::Validate::Dependencies::all_or_none_of
-
-=head1 DESCRIPTION
-
-An extension for Params::Validate::Dependencies to validate that either
-all of or none of a list of params are present.
+Params::Validate::Dependencies::all_or_none_of - validate that either all or none of a list of params are present
 
 =head1 SYNOPSIS
 
@@ -98,7 +93,7 @@ L<https://github.com/DrHyde/perl-modules-Params-Validate-Dependencies-all_or_non
 
 =head1 COPYRIGHT and LICENCE
 
-Copyright 2011 David Cantrell E<lt>F<david@cantrell.org.uk>E<gt>
+Copyright 2024 David Cantrell E<lt>F<david@cantrell.org.uk>E<gt>
 
 This software is free-as-in-speech software, and may be used, distributed, and modified under the terms of either the GNU General Public Licence version 2 or the Artistic Licence. It's up to you which one you use. The full text of the licences can be found in the files GPL2.txt and ARTISTIC.txt, respectively.
 

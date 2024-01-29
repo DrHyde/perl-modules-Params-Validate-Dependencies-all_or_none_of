@@ -1,4 +1,6 @@
-2024-01-29    1.02    Remove test for obsolete generate_documentation method
+1.02    2024-01-29
+
+- Remove test for obsolete generate_documentation method
 
 2015-03-21    1.01    Minor change to wording in auto-documentation
                         (or => and);
