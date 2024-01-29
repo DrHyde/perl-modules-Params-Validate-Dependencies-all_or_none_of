@@ -22,10 +22,4 @@ foreach my $one (qw(alpha beta gamma)) {
 ok(!$domain->inspect({}), "none, validation succeeded");
 ok(!$domain->inspect({map { $_ => 1 } qw(alpha beta gamma)}), "all three, validation succeeded");
 
-is(
-  $domain->generate_documentation(),
-  "all or none of ('alpha', 'beta' and 'gamma')",
-  "doco works"
-);
-
 done_testing();

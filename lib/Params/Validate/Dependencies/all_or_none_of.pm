@@ -7,7 +7,7 @@ use base qw(Exporter Params::Validate::Dependencies::Documenter);
 
 use vars qw($VERSION @EXPORT @EXPORT_OK);
 
-$VERSION = '1.01';
+$VERSION = '1.02';
 @EXPORT_OK = @EXPORT = ('all_or_none_of');
 
 =head1 NAME
